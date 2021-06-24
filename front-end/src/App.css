@@ -1,0 +1,46 @@
+
+  body {
+    text-align: center;
+    background-color: white;
+    background-size: cover;
+    height: 100vh;
+    padding: 7%;
+    box-sizing: border-box;
+  }
+  
+  .App {
+    background-color: white;
+    padding: 5%;
+    min-width: fit-content;
+    min-height: fit-content;
+    box-sizing: border-box;
+    height: 590px;
+  }
+  .button {
+    padding: 10px;
+    width: 150px;
+    text-decoration: none;
+     margin: 10px;
+    font-weight: 700;
+  }
+  
+  /* card for displaying contact */
+  
+  .contact-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  .edit-button {
+    padding: 10px;
+    width: 100px;
+    text-decoration: none;
+     margin: 10px;
+    font-weight: 700;
+  }
+  
