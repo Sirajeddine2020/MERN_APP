@@ -9,6 +9,7 @@ const AddUser = () => {
     name: "",
     email: "",
     phone: "",
+    address: "",
   });
 
   const dispatch = useDispatch();
@@ -19,7 +20,7 @@ const AddUser = () => {
     if (isEdit) {
       setNewUser(userId);
     } else {
-      setNewUser({ name: "", email: "", phone: "" });
+      setNewUser({ name: "", email: "", phone: "", address:"" });
     }
   }, [userId, isEdit]);
 
@@ -95,6 +96,19 @@ const AddUser = () => {
                   placeholder="Enter your phone"
                   onChange={handleChange}
                   value={newUser.phone}
+                />
+              </Form.Group>
+              <Form.Group
+                controlId="formBasicEmail"
+                style={{ textAlign: "left" }}
+              >
+                <Form.Label>address :</Form.Label>
+                <Form.Control
+                  type="text"
+                  name="phone"
+                  placeholder="Enter your address please"
+                  onChange={handleChange}
+                  value={newUser.address}
                 />
               </Form.Group>
             </Form>

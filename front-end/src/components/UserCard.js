@@ -62,6 +62,9 @@ const UserCard = ({ user }) => {
           <Card.Text style={{ fontSize: "small", color: "#4baed4" }}>
             {user.phone}
           </Card.Text>
+          <Card.Text style={{ fontSize: "small", color: "#4baed4" }}>
+            {user.address}
+          </Card.Text>
         </Card.Body>
         <div className="buttons">
           <Link to="/Edit_user">
